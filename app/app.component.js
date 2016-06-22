@@ -12,6 +12,9 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
     }
+    AppComponent.prototype.loginAction = function () {
+        alert("added method");
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',

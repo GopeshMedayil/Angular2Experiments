@@ -3,4 +3,8 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   templateUrl: 'templates/home.html'
 })
-export class AppComponent { }
+export class AppComponent {
+		loginAction() {
+			alert("added method");
+		}
+ }

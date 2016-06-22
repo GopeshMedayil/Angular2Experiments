@@ -3,17 +3,17 @@
         <h5 class="indigo-text">Please Login</h5>
         <div class='row'>
             <div class='input-field col s12'>
-                <input class='validate' type='text' name='login_txt' id='login_txt' />
+                <input class='validate' type='text' name='login_txt' id='login_txt' #data.username />
                 <label for='login_txt'>Enter your email</label>
             </div>
             <div class='input-field col s12'>
-                <input class='validate' type='password' name='login_txt' id='login_txt' />
+                <input class='validate' type='password' name='login_txt' id='login_txt' #data.password />
                 <label for='login_txt'>Enter your password</label>
             </div>
         </div>
         <center>
             <div class='row'>
-                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
+                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo' (click)="loginAction()">Login</button>
             </div>
         </center>
     </div>
