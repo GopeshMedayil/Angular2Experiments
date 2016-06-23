@@ -1,8 +1,8 @@
 <div class="container feedback-container">
-    <div class="card-panel hoverable">
+    <div class="card-panel hoverable col m4 s12">
         <h5 class="indigo-text">Please Login</h5>
         <div class='row'>
-            <div class='input-field col s12'>
+            <div class='input-field '>
                 <input class='validate' type='text' name='login_txt' id='login_txt' #data.username />
                 <label for='login_txt'>Enter your email</label>
             </div>
@@ -13,7 +13,9 @@
         </div>
         <center>
             <div class='row'>
-                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo' (click)="loginAction()">Login</button>
+                <button class="btn waves-effect waves-light indigo" type="submit" name="action" (click)="loginAction()">Login
+                    <i class="material-icons right"></i>
+                </button>
             </div>
         </center>
     </div>
